@@ -1,10 +1,28 @@
+<!DOCTYPE html>
 <head>
-  <title>main page</title>
-  <link rel="stylesheet" href="style.css">
+<title>main page</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="top-bar">
-    <button class="top-button" onclick="window.location.href='cookie-clicker'">cookie clicker</button>
-    <button class="top-button" onclick="window.location.href='pixel-painter'">pixel painter</button>
-  </div>
+<script src="script.js"></script>
+<div class="top-bar">
+<button class="top-button" onclick="window.location.href='cookie-clicker'">cookie clicker</button>
+<button class="top-button" onclick="window.location.href='pixel-painter'">pixel painter</button>
+</div>
+<div class="left-bar">
+<button class="left-button" onclick="openInfo('general-info')">general info</button>
+<button class="left-button" onclick="openInfo('cookie-clicker-info')">cookie clicker info</button>
+<button class="left-button" onclick="openInfo('pixel-painter-info')">pixel painter info</button>
+</div>
+<div class="main-info-area" id="main-info-area">
+<div class="info-page shown" id="general-info">
+<p>just some stuff</p>
+</div>
+<div class="info-page hidden" id="cookie-clicker-info">
+<p>some stuff about cookie clicker</p>
+</div>
+<div class="info-page hidden" id="pixel-painter-info">
+<p>just stuff about pixel painter</p>
+</div>
+</div>
 </body>

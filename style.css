@@ -1,21 +1,54 @@
 .top-bar {
-  width: 100%;
-  height: 80px;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  background-color: green;
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: green;
 }
 
 .top-button {
-  font-size: 16px;
-  font-weight: bold;
-  background-color: white;
-  color: black;
-  height: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 0px;
-  margin: 20px 0px 20px 20px;
-  border-radius: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: gainsboro;
+	color: black;
+	height: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 0px;
+	margin: 20px 0px 20px 20px;
+	border-radius: 20px;
 }
+
+.left-bar {
+	width: 240px;
+	height: 100%;
+	position: fixed;
+	top: 80px;
+	left: 0px;
+	background-color: lightgreen;
+}
+
+.left-button {
+	font-size: 16px;
+	font-weight: bold;
+	background-color: gainsboro;
+	color: black;
+	width: 200px;
+	height: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 0px;
+	margin: 20px 20px 0px 20px;
+	border-radius: 20px;
+}
+
+.main-info-area {
+	position: fixed;
+	top: 80px;
+	left: 240px;
+}
+
+.info-page {margin: 20px 0px 0px 20px}
+
+.hidden {display: none}
