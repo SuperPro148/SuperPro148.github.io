@@ -1,3 +1,3 @@
-[cookie clicker](superpro148.github.io/cookie-clicker)
+[cookie clicker](cookie-clicker)
 
-[pixel painter](superpro148.github.io/pixel-painter)
+[pixel painter](pixel-painter)
