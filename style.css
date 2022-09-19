@@ -1,3 +1,7 @@
+body {
+	font-family: monospace;
+}
+
 .top-bar {
 	width: 100%;
 	height: 80px;
