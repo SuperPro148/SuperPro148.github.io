@@ -52,3 +52,7 @@ body {
     background-color: #2A2A2A;
     cursor: pointer;
 }
+
+#icon:hover {
+    cursor: pointer;
+}

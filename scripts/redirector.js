@@ -12,5 +12,8 @@ function redirectTo(page) {
         case "github":
             window.location.href = "https://github.com/SuperPro148";
             break;
+        case "mainpage":
+            window.location.href = "https://superpro148.github.io";
+            break;
     }
 }
