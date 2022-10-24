@@ -4,54 +4,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="script.js"></script>
-    <div class="top-bar">
-        <button class="top-button"
-            onclick="window.location.href='https://github.com/superpro148/'">repositories</button>
-        <button class="top-button" onclick="window.location.href='cookie-clicker'">cookie clicker</button><button
-            class="top-button" onclick="window.location.href='pixel-painter'">pixel painter</button>
-        <button class="top-button" onclick="window.location.href='chat-sim'">chat sim</button>
-        <button class="top-button" onclick="window.location.href='canvas-game'">canvas game</button>
+    <div id="top-bar">
+        <svg id="icon" width="80" height="80" viewBox="0 0 320 320"></svg>
+        <p id="top-text">SuperPro148's main page</p>
     </div>
-    <div class="left-bar">
-        <button class="left-button" onclick="openInfo('general-info')">general info</button>
-        <button class="left-button" onclick="openInfo('cookie-clicker-info')">cookie clicker info</button>
-        <button class="left-button" onclick="openInfo('pixel-painter-info')">pixel painter info</button>
-        <button class="left-button" onclick="openInfo('chat-sim-info')">chat sim info</button>
-        <button class="left-button" onclick="openInfo('canvas-game-info')">canvas game info</button>
-        <button class="left-button" onclick="openInfo('supers-test-mod-info')">Super's Test Mod info</button>
-    </div>
-    <div class="main-info-area" id="main-info-area">
-        <div class="info-page shown" id="general-info">
-            <p>just some stuff</p>
-        </div>
-        <div class="info-page hidden" id="cookie-clicker-info">
-            <p>a shitty cookie clicker copy</p>
-        </div>
-        <div class="info-page hidden" id="pixel-painter-info">
-            <p>painting with pixels!</p>
-        </div>
-        <div class="info-page hidden" id="chat-sim-info">
-            <p>ur bored or lonely? chat sim!</p>
-        </div>
-        <div class="info-page hidden" id="canvas-game-info">
-            <p>a test made with html canvas, simple game you can play</p>
-        </div>
-        <div class="info-page hidden" id="supers-test-mod-info">
-            <p>a mod for Fabric 1.19.2, adds random features</p>
-            <p>RELEASES</p>
-            <p><a href="https://github.com/SuperPro148/supers-test-mod/releases/download/1.8.0/supers-test-mod-1.8.0.jar">release 1.8.0 LATEST</a></p>
-            <p><a href="https://github.com/SuperPro148/supers-test-mod/releases/download/1.7.1/supers-test-mod-1.7.1.jar">release 1.7.1</a></p>
-            <p><a href="https://github.com/SuperPro148/supers-test-mod/releases/download/1.7.0/supers-test-mod-1.7.0.jar">release 1.7.0</a></p>
-            <p><a href="https://github.com/SuperPro148/supers-test-mod/releases/download/1.6.1/supers-test-mod-1.6.1.jar">release 1.6.1</a></p>
-            <p><a href="https://github.com/SuperPro148/supers-test-mod/releases/download/1.6.0/supers-test-mod-1.6.0.jar">release 1.6.0</a></p>
-            <p><a href="https://github.com/SuperPro148/supers-test-mod/releases/download/1.5.0/supers-test-mod-1.5.0.jar">release 1.5.0</a></p>
-            <p><a href="https://github.com/SuperPro148/supers-test-mod/releases/download/1.4.0/supers-test-mod-1.4.0.jar">release 1.4.0</a></p>
-            <p><a href="https://github.com/SuperPro148/supers-test-mod/releases/download/1.3.0/supers-test-mod-1.3.0.jar">release 1.3.0</a></p>
-            <p><a href="https://github.com/SuperPro148/supers-test-mod/releases/download/1.2.0/supers-test-mod-1.2.0.jar">release 1.2.0</a></p>
-            <p><a href="https://github.com/SuperPro148/supers-test-mod/releases/download/1.1.0/supers-test-mod-1.1.0.jar">release 1.1.0</a></p>
-            <p><a href="https://github.com/SuperPro148/supers-test-mod/releases/download/1.0.0/supers-test-mod-1.0.0.jar">release 1.0.0</a></p>
-            <p><a href="https://github.com/SuperPro148/supers-test-mod/">source code</a></p>
-        </div>
-    </div>
+    <script src="./icon/icondrawer.js"></script>
 </body>
