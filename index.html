@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <head>
-    <title>SuperPro148's main page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter">
 </head>
 <body>
-    <div id="top-bar">
-        <svg onclick="redirectTo('mainpage')" id="icon" width="80" height="80" viewBox="0 0 320 320"></svg>
-        <p id="top-text">SuperPro148's main page</p>
+    <script src="script.js"></script>
+    <div id="header" class="page-element">
+        <img id="icon" src="img/icon.png" alt="icon">
+        <p id="header-text">SuperPro148</p>
+        <button class="header-button" onclick="openMinecraftMods()">Minecraft mods<img src="img/feather_icons/cube.svg" class="header-button-icon"></img></button>
+        <button class="header-button" onclick="openCookieClicker()">Cookie Clicker<img src="img/feather_icons/cookie.svg" class="header-button-icon"></img></button>
+        <button class="header-button">Other JS projects<img src="img/feather_icons/list.svg" class="header-button-icon"></img></button>
+        <a href="https://github.com/SuperPro148"><button class="header-button">GitHub profile<img src="img/feather_icons/code.svg" class="header-button-icon"></img></button></a>
     </div>
-    <div id="side-bar">
-        <button onclick="redirectTo('mcmods')" class="side-button">Minecraft Mods</button>
-        <button onclick="redirectTo('cookieclicker')" class="side-button">Cookie Clicker</button>
-        <button onclick="redirectTo('other')" class="side-button">Other HTML/JS</button>
-        <button onclick="redirectTo('github')" class="side-button">Github Profile</button>
-    </div>
-    <script src="./scripts/icondrawer.js"></script>
-    <script src="./scripts/redirector.js"></script>
+    <div id="mc-mods-div" class="hidden"></div>
 </body>

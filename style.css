@@ -1,58 +1,119 @@
 body {
-    font-family: "Comic Sans MS";
+    margin: 0px 64px;
+    background-color: black;
+    font-family: Inter;
+    color: white;
 }
 
-#top-bar {
-    left: 0px;
+.hidden {
+    display: none;
+}
+
+.page-element {
+    background-color: #101013;
+    border-radius: 16px;
+    margin: 8px;
+}
+
+.header-button {
+    background-color: #202026;
+    color: white;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: left;
+    text-indent: 16px;
+    height: 48px;
+    width: 240px;
+    border-radius: 24px;
+    margin: 16px 8px;
+    display: inline-block;
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.header-button-icon {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+}
+
+.header-button:active {
+    background-color: #151519;
+}
+
+.mc-mod {
+    width: calc(100%-16px);
+    height: 160px;
+    margin: 8px;
+    position: relative;
+}
+
+.mc-mod-icon {
+    width: 128px;
+    height: 128px;
+    margin: 16px;
+    border-radius: 16px;
+}
+
+.mc-mod-title {
+    font-size: 24px;
+    font-weight: 900;
+    position: absolute;
     top: 0px;
-    width: 100%;
+    left: 160px;
+}
+
+.mc-mod-desc {
+    font-size: 24px;
+    font-weight: 100;
+    position: absolute;
+    top: 32px;
+    left: 160px;
+    color: #cccccf;
+}
+
+.mc-mod-download-icon {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 96px;
+    left: 160px;
+}
+
+.mc-mod-download-count {
+    font-size: 24px;
+    font-weight: 900;
+    position: absolute;
+    top: 72px;
+    left: 200px;
+    color: #cccccf;
+}
+
+#header {
+    width: calc(100%-16px);
     height: 80px;
-    background-color: #222222;
-    position: fixed;
+    display: flex;
 }
 
 #icon {
-    left: 10px;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 16px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#header-text {
     top: 0px;
-    position: fixed;
-}
-
-#top-text {
-    left: 100px;
-    top: -30px;
-    font-size: 40px;
-    font-weight: 800;
-    color: lightblue;
-    position: fixed;
-}
-
-#side-bar {
-    left: 0px;
-    top: 80px;
-    width: 240px;
-    height: calc(100% - 80px);
-    background-color: #333333;
-    position: fixed;
-}
-
-.side-button {
-    left: 0px;
-    width: 240px;
-    height: 60px;
-    font-size: 24px;
-    font-family: "Comic Sans MS", "Comic Sans";
-    font-weight: 800;
-    border: none;
-    color: lightblue;
-    background-color: #333333;
-    
-}
-
-.side-button:hover {
-    background-color: #2A2A2A;
-    cursor: pointer;
-}
-
-#icon:hover {
-    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    width: 216px;
+    font-size: 33px;
+    font-weight: 900;
+    margin: 20px 8px;
 }
