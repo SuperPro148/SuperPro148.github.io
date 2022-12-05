@@ -98,3 +98,14 @@ async function createModElement(slug, callback) {
     xhttp.open("GET", `https://api.modrinth.com/v2/project/${slug}`);
     xhttp.send();
 }
+
+function scrollHeaderLeft() {
+    let scrollTarget = document.getElementById("icon");
+    scrollTarget.scrollIntoView({behavior: "smooth", block: "nearest", inline: "center"});
+}
+
+function scrollHeaderRight() {
+    let buttons = document.querySelectorAll(".header-button");
+    let scrollTarget = buttons[buttons.length - 1];
+    scrollTarget.scrollIntoView({behavior: "smooth", block: "nearest", inline: "center"});
+}

@@ -50,7 +50,7 @@ body {
 }
 
 .mc-mod {
-    width: calc(100%-16px);
+    width: calc(100% - 16px);
     height: 160px;
     margin: 8px;
     position: relative;
@@ -97,8 +97,23 @@ body {
     color: #cccccf;
 }
 
+.header-scroll-div {
+    top: 8px;
+    width: 72px;
+    height: 80px;
+    position: absolute;
+}
+
+#header-scroll-left {
+    left: 0px;
+}
+
+#header-scroll-right {
+    left: calc(100% - 72px);
+}
+
 #header {
-    width: calc(100%-16px);
+    width: calc(100% - 16px);
     height: 80px;
     display: flex;
     overflow-x: scroll;
