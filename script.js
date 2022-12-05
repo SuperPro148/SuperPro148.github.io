@@ -9,28 +9,21 @@ function openMinecraftMods() {
             mcModsDiv.removeChild(mcModsDiv.lastChild);
         }
     }
-    setTimeout(() => {
-        createModElement("quickarmorswap");
-        setTimeout(() => {
-            createModElement("armorhud-fabric");
-            setTimeout(() => {
-                createModElement("platformprecision");
-                setTimeout(() => {
-                    createModElement("configlib148");
-                    setTimeout(() => {
-                        createModElement("supers-test-mod");
-                        setTimeout(() => {
-                            mcModsDiv.classList.remove("hidden");
-                            mcModsDiv.classList.add("shown");
-                        }, 200);
-                    }, 200);
-                }, 200);
-            }, 200);
-        }, 200);
-    }, 200);
+    createModElement("quickarmorswap", () => {
+        createModElement("armorhud-fabric", () => {
+            createModElement("platformprecision", () => {
+                createModElement("configlib148", () => {
+                    createModElement("supers-test-mod", () => {
+                        mcModsDiv.classList.remove("hidden");
+                        mcModsDiv.classList.add("shown");
+                    });
+                });
+            });
+        });
+    });
 }
 
-function createModElement(slug) {
+async function createModElement(slug, callback) {
     function modrinthApiResponse() {
         let apiResponse = JSON.parse(this.response);
         
@@ -68,6 +61,7 @@ function createModElement(slug) {
         mainElem.appendChild(downloadCountElem);
     
         document.getElementById("mc-mods-div").appendChild(mainElem);
+        callback()
     }
     let xhttp = new XMLHttpRequest();
     xhttp.addEventListener("load", modrinthApiResponse)
