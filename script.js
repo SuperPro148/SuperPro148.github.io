@@ -1,3 +1,33 @@
+function openMainPage() {
+    document.querySelectorAll(".shown").forEach((i) => {
+        i.classList.remove("shown");
+        i.classList.add("hidden");
+    });
+    let mainPageDiv = document.getElementById("main-page-div");
+    mainPageDiv.classList.remove("hidden");
+    mainPageDiv.classList.add("shown");
+}
+
+function openCookieClicker() {
+    document.querySelectorAll(".shown").forEach((i) => {
+        i.classList.remove("shown");
+        i.classList.add("hidden");
+    });
+    let cookieClickerDiv = document.getElementById("cookie-clicker-div");
+    cookieClickerDiv.classList.remove("hidden");
+    cookieClickerDiv.classList.add("shown");
+}
+
+function openOtherPage() {
+    document.querySelectorAll(".shown").forEach((i) => {
+        i.classList.remove("shown");
+        i.classList.add("hidden");
+    });
+    let otherPageDiv = document.getElementById("other-page-div");
+    otherPageDiv.classList.remove("hidden");
+    otherPageDiv.classList.add("shown");
+}
+
 function openMinecraftMods() {
     document.querySelectorAll(".shown").forEach((i) => {
         i.classList.remove("shown");
