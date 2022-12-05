@@ -15,6 +15,10 @@ body {
     margin: 8px;
 }
 
+.header-item {
+    flex: 0 0 auto;
+}
+
 .header-button {
     background-color: #202026;
     color: white;
@@ -97,6 +101,13 @@ body {
     width: calc(100%-16px);
     height: 80px;
     display: flex;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#header::-webkit-scrollbar {
+    display: none;
 }
 
 #icon {
