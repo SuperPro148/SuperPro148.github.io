@@ -156,6 +156,7 @@ body {
 
 #cookie-clicker-textbox {
     width: calc(20% - 16px);
+    min-width: 200px;
     height: auto;
     flex: 0 0 auto;
 }
@@ -167,6 +168,7 @@ body {
 
 #cookie-clicker-imgbox {
     width: calc(80% - 16px);
+    min-width: 400px;
     flex: 0 0 auto;
 }
 
