@@ -1,16 +1,16 @@
 body {
-    margin: 0px 64px;
-    background-color: black;
+    margin: 16px 64px;
+    background-color: #161618;
     font-family: Inter;
     color: white;
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .page-element {
-    background-color: #101013;
+    background-color: #222225;
     border-radius: 16px;
     margin: 8px;
 }
@@ -20,7 +20,7 @@ body {
 }
 
 .header-button {
-    background-color: #202026;
+    background-color: #28282e;
     color: white;
     font-family: Inter;
     font-size: 20px;
@@ -46,7 +46,7 @@ body {
 }
 
 .header-button:active {
-    background-color: #151519;
+    background-color: #242428;
 }
 
 .mc-mod {
@@ -61,6 +61,7 @@ body {
     height: 128px;
     margin: 16px;
     border-radius: 16px;
+    background-color: black;
 }
 
 .mc-mod-title {
@@ -135,11 +136,44 @@ body {
 }
 
 #header-text {
-    top: 0px;
     display: inline-block;
     text-align: center;
     width: 216px;
     font-size: 33px;
     font-weight: 900;
     margin: 20px 8px;
+}
+
+#mc-mods-div {
+    display: flex;
+    flex-direction: column;
+}
+
+#cookie-clicker-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#cookie-clicker-textbox {
+    width: calc(20% - 16px);
+    height: auto;
+    flex: 0 0 auto;
+}
+
+#cookie-clicker-text {
+    font-size: 16px;
+    margin: 16px;
+}
+
+#cookie-clicker-imgbox {
+    width: calc(80% - 16px);
+    flex: 0 0 auto;
+}
+
+#cookie-clicker-img {
+    width: calc(100% - 16px);
+    height: auto;
+    margin: 8px;
+    border-radius: 8px;
+    display: block;
 }

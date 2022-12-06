@@ -10,13 +10,39 @@
     <div id="header" class="page-element">
         <img id="icon" class="header-item" src="img/icon.png" alt="icon" onclick="openMainPage()">
         <p id="header-text" class="header-item">SuperPro148</p>
-        <button class="header-button header-item" onclick="openMinecraftMods()">Minecraft mods<img src="img/feather_icons/cube.svg" class="header-button-icon"></img></button>
-        <button class="header-button header-item" onclick="openCookieClicker()">Cookie Clicker<img src="img/feather_icons/cookie.svg" class="header-button-icon"></img></button>
-        <button class="header-button header-item" onclick="openOtherPage()">Other stuff<img src="img/feather_icons/list.svg" class="header-button-icon"></img></button>
-        <a href="https://github.com/SuperPro148"><button class="header-button header-item">GitHub profile<img src="img/feather_icons/code.svg" class="header-button-icon"></img></button></a>
+        <button class="header-button header-item" onclick="openMinecraftMods()">
+            Minecraft mods
+            <img src="img/feather_icons/cube.svg" class="header-button-icon">
+        </button>
+        <button class="header-button header-item" onclick="openCookieClicker()">
+            Cookie Clicker
+            <img src="img/feather_icons/cookie.svg" class="header-button-icon">
+        </button>
+        <button class="header-button header-item" onclick="openOtherPage()">
+            Other stuff
+            <img src="img/feather_icons/list.svg" class="header-button-icon">
+        </button>
+        <a href="https://github.com/SuperPro148">
+            <button class="header-button header-item">
+                GitHub profile
+                <img src="img/feather_icons/code.svg" class="header-button-icon">
+            </button>
+        </a>
     </div>
     <div id="main-page-div" class="shown"></div>
     <div id="mc-mods-div" class="hidden"></div>
-    <div id="cookie-clicker-div" class="hidden"></div>
+    <div id="cookie-clicker-div" class="hidden">
+        <div id="cookie-clicker-textbox" class="page-element">
+            <p id="cookie-clicker-text">
+                This is a simple version of Cookie Clicker I made, it's one of my first HTML/CSS/JS projects.
+                It looks absolutely terrible, I know.
+            </p>
+        </div>
+        <div id="cookie-clicker-imgbox" class="page-element">
+            <a href="https://superpro148.github.io/cookie-clicker">
+                <img id="cookie-clicker-img" src="img/cookie-clicker.png">
+            </a>
+        </div>
+    </div>
     <div id="other-page-div" class="hidden"></div>
 </body>
