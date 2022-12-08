@@ -95,6 +95,39 @@ function scrollHeaderRight() {
     scrollTarget.scrollIntoView({behavior: "smooth", block: "nearest", inline: "center"});
 }
 
+function lightMode() {
+    let root = document.querySelector(":root");
+    root.style.setProperty("--bg-color", "#dddfe2");
+    root.style.setProperty("--elem-color", "#ffffff");
+    root.style.setProperty("--button-color", "#dddfe1");
+    root.style.setProperty("--button-active-color", "#f6f6f9");
+    root.style.setProperty("--text-color", "#000000");
+    root.style.setProperty("--mc-mod-desc-color", "#333330");
+    document.querySelectorAll(".header-button-icon").forEach((element) => {
+        element.classList.add("dark-icon");
+    });
+    document.querySelectorAll(".mc-mod-download-icon").forEach((element) => {
+        element.classList.add("dark-icon");
+    });
+    document.getElementById("dark-mode-button").classList.remove("hidden");
+    document.getElementById("light-mode-button").classList.add("hidden");
+}
+
+function darkMode() {
+    let root = document.querySelector(":root");
+    root.style.setProperty("--bg-color", "#161618");
+    root.style.setProperty("--elem-color", "#222225");
+    root.style.setProperty("--button-color", "#28282e");
+    root.style.setProperty("--button-active-color", "#242428");
+    root.style.setProperty("--text-color", "#ffffff");
+    root.style.setProperty("--mc-mod-desc-color", "#cccccf");
+    document.querySelectorAll(".dark-icon").forEach((element) => {
+        element.classList.remove("dark-icon");
+    });
+    document.getElementById("light-mode-button").classList.remove("hidden");
+    document.getElementById("dark-mode-button").classList.add("hidden");
+}
+
 createModElement("quickarmorswap", () => {
     createModElement("armorhud-fabric", () => {
         createModElement("platformprecision", () => {
