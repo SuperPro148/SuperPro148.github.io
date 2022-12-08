@@ -67,7 +67,7 @@ async function createModElement(slug, callback) {
 
         let downloadIconElem = document.createElement("img");
         downloadIconElem.classList.add("mc-mod-download-icon");
-        downloadIconElem.src = "img/feather_icons/download.svg";
+        downloadIconElem.src = "img/lucide/download.svg";
         mainElem.appendChild(downloadIconElem);
 
         let downloadCountElem = document.createElement("p");
