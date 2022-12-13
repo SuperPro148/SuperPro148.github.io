@@ -38,7 +38,7 @@ function openMinecraftMods() {
     mcModsDiv.classList.add("shown");
 }
 
-async function createModElement(slug, callback) {
+async function createModElement(slug, order) {
     function modrinthApiResponse() {
         let apiResponse = JSON.parse(this.response);
         
@@ -75,8 +75,13 @@ async function createModElement(slug, callback) {
         downloadCountElem.innerHTML = apiResponse.downloads;
         mainElem.appendChild(downloadCountElem);
     
-        document.getElementById("mc-mods-div").appendChild(mainElem);
-        callback()
+        modElements[order] = mainElem;
+        modElementsFinished.push(true);
+        if (modElementsFinished.length === 5) {
+            modElements.forEach((elem) => {
+                document.getElementById("mc-mods-div").appendChild(elem);
+            });
+        }
     }
     let xhttp = new XMLHttpRequest();
     xhttp.addEventListener("load", modrinthApiResponse)
@@ -128,12 +133,11 @@ function darkMode() {
     document.getElementById("dark-mode-button").classList.add("hidden");
 }
 
-createModElement("quickarmorswap", () => {
-    createModElement("armorhud-fabric", () => {
-        createModElement("platformprecision", () => {
-            createModElement("configlib148", () => {
-                createModElement("supers-test-mod", () => {});
-            });
-        });
-    });
-});
+let modElements = [];
+let modElementsFinished = [];
+
+createModElement("quickarmorswap", 0);
+createModElement("armorhud-fabric", 1);
+createModElement("platformprecision", 2);
+createModElement("configlib148", 3);
+createModElement("supers-test-mod", 4);
