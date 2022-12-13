@@ -49,11 +49,8 @@ async function createModElement(slug, order) {
         let iconElem = document.createElement("img");
         iconElem.classList.add("mc-mod-icon");
         iconElem.src = `img/mc_mods/${slug}.png`;
-
-        let iconLinkElem = document.createElement("a");
-        iconLinkElem.href = `https://modrinth.com/mod/${slug}`
-        iconLinkElem.appendChild(iconElem);
-        mainElem.appendChild(iconLinkElem);
+        iconElem.setAttribute("onclick", `window.open('https://modrinth.com/mod/${slug}')`);
+        mainElem.appendChild(iconElem);
 
         let titleElem = document.createElement("p");
         titleElem.classList.add("mc-mod-title");
