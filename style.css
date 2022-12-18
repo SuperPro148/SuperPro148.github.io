@@ -115,7 +115,7 @@ body {
     width: 128px;
     height: 128px;
     margin: 16px;
-    border-radius: 16px;
+    border-radius: 12px;
     background-color: black;
     cursor: pointer;
 }
@@ -179,7 +179,7 @@ body {
     width: 64px;
     height: 64px;
     margin: 8px;
-    border-radius: 16px;
+    border-radius: 12px;
     display: inline-block;
     cursor: pointer;
 }
