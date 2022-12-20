@@ -47,7 +47,7 @@ async function createModElement(slug, order) {
 
     let iconElem = document.createElement("img");
     iconElem.classList.add("mc-mod-icon");
-    iconElem.src = `img/mc_mods/${slug}.png`;
+    iconElem.src = apiResponse.icon_url;
     iconElem.setAttribute("onclick", `window.open('https://modrinth.com/mod/${slug}')`);
     mainElem.appendChild(iconElem);
 
