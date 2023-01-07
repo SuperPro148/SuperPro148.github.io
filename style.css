@@ -102,6 +102,11 @@ body {
     position: absolute;
 }
 
+.about-me-text {
+    font-size: 16px;
+    margin: 16px;
+}
+
 .mc-mod {
     width: calc(100% - 16px);
     height: 160px;
@@ -197,6 +202,57 @@ body {
     height: 80px;
 }
 
+#main-page-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about-me-textbox {
+    min-width: 500px;
+    width: calc(50% - 16px);
+    flex: 1 0 auto;
+}
+
+#modrinth-profile {
+    min-width: 500px;
+    width: calc(50% - 16px);
+    height: 160px;
+    flex: 1 0 auto;
+    position: relative;
+}
+
+#modrinth-profile-icon {
+    margin: 16px;
+    width: 128px;
+    height: 128px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#modrinth-profile-followers {
+    font-weight: 900;
+    font-size: 20px;
+    top: 12px;
+    left: 160px;
+    position: absolute;
+}
+
+#modrinth-profile-downloads {
+    font-weight: 900;
+    font-size: 20px;
+    top: 48px;
+    left: 160px;
+    position: absolute;
+}
+
+#modrinth-profile-projects {
+    font-weight: 900;
+    font-size: 20px;
+    top: 84px;
+    left: 160px;
+    position: absolute;
+}
+
 #mc-mods-div {
     display: flex;
     flex-direction: column;
@@ -211,7 +267,7 @@ body {
     width: calc(20% - 16px);
     min-width: 200px;
     height: auto;
-    flex: 0 0 auto;
+    flex: 1 0 auto;
 }
 
 #cookie-clicker-text {
@@ -222,7 +278,7 @@ body {
 #cookie-clicker-imgbox {
     width: calc(80% - 16px);
     min-width: 400px;
-    flex: 0 0 auto;
+    flex: 1 0 auto;
 }
 
 #cookie-clicker-img {
@@ -230,5 +286,6 @@ body {
     height: auto;
     margin: 8px;
     border-radius: 8px;
+    cursor: pointer;
     display: block;
 }

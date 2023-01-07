@@ -32,22 +32,32 @@
         <button id="dark-mode-button" class="header-item light-dark-button hidden" onclick="darkMode()">
             <img src="img/lucide/moon.svg" class="dark-mode-button-icon">
         </button>
-        <div id="apple-hates-me"></button>
+        <div id="apple-hates-me"></div>
     </div>
-    <div id="main-page-div" class="shown"></div>
+    <div id="main-page-div" class="shown">
+        <div id="about-me-textbox" class="page-element">
+            <p class="about-me-text">My (obviously not real) name is SuperPro148. I mainly program Minecraft Java mods, but I've also done some HTML and JavaScript (this site for example).</p>
+            <p class="about-me-text">Here on the right you can see my Modrinth profile, currently I have <b id="downloads-amount">0</b> total downloads.</p>
+            <p class="about-me-text">I'm also currently learning Svelte, which I might later rewrite this site in. It's currently written completely in vanilla HTML/CSS/JS, no frameworks.</p>
+        </div>
+        <div id="modrinth-profile" class="page-element">
+            <img id="modrinth-profile-icon" src="img/icon.png" onclick="window.open('https://modrinth.com/user/SuperPro148')">
+            <p id="modrinth-profile-followers">Project followers: 0</p>
+            <p id="modrinth-profile-downloads">Project downloads: 0</p>
+            <p id="modrinth-profile-projects">Projects: 0</p>
+        </div>
+    </div>
     <div id="mc-mods-div" class="hidden"></div>
     <div id="cookie-clicker-div" class="hidden">
         <div id="cookie-clicker-textbox" class="page-element">
             <p id="cookie-clicker-text">
                 This is a simple version of Cookie Clicker I made, it's one of my first HTML/CSS/JS projects.
-                It looks absolutely terrible, I know.
-                You can play it by clicking the image.
+                I know how awful it looks, didn't really pay much attention to design.
+                You can open it by clicking the image.
             </p>
         </div>
         <div id="cookie-clicker-imgbox" class="page-element">
-            <a href="https://superpro148.github.io/cookie-clicker">
-                <img id="cookie-clicker-img" src="img/cookie-clicker.png">
-            </a>
+            <img id="cookie-clicker-img" src="img/cookie-clicker.png" onclick="window.open('https://superpro148.github.io/cookie-clicker')">
         </div>
     </div>
     <div id="other-page-div" class="hidden"></div>

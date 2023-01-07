@@ -80,6 +80,25 @@ async function createModElement(slug, order) {
     }
 }
 
+async function setProfileAmounts() {
+    let res = await (await fetch("https://api.modrinth.com/v2/user/SuperPro148/projects")).json();
+
+    let followers = 0;
+    let downloads = 0;
+    let projects = 0;
+
+    res.forEach((item) => {
+        followers += item.followers;
+        downloads += item.downloads;
+        projects++;
+    });
+
+    document.getElementById("modrinth-profile-downloads").innerText = `Project downloads:\t\t\t\t${downloads}`;
+    document.getElementById("modrinth-profile-followers").innerText = `Project followers:\t\t\t\t${followers}`;
+    document.getElementById("modrinth-profile-projects").innerText = `Projects:\t\t\t\t${projects}`;
+    document.getElementById("downloads-amount").innerText = `${downloads}`;
+}
+
 function scrollHeaderLeft() {
     let scrollTarget = document.getElementById("icon");
     scrollTarget.scrollIntoView({behavior: "smooth", block: "nearest", inline: "center"});
@@ -126,6 +145,8 @@ function darkMode() {
 
 let modElements = [];
 let modElementsFinished = [];
+
+setProfileAmounts();
 
 createModElement("quickarmorswap", 0);
 createModElement("armorhud-fabric", 1);
