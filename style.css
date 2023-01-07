@@ -48,18 +48,23 @@ body {
     position: relative;
 }
 
+.header-button:hover {
+    transform: translateY(-2px);
+}
+
 .header-button-icon {
     position: absolute;
     right: 12px;
     top: 8px;
 }
 
-.dark-icon {
-    filter: invert(100%);
-}
-
 .header-button:active {
     background-color: var(--button-active-color);
+    transform: translateY(2px);
+}
+
+.dark-icon {
+    filter: invert(100%);
 }
 
 .light-dark-button {
@@ -74,8 +79,13 @@ body {
     position: relative;
 }
 
+.light-dark-button:hover {
+    transform: translateY(-2px);
+}
+
 .light-dark-button:active {
     background-color: var(--button-active-color);
+    transform: translateY(2px);
 }
 
 .dark-mode-button-icon {
