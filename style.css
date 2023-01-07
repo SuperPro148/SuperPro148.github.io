@@ -163,7 +163,6 @@ body {
 #header {
     width: auto;
     height: 80px;
-    padding-right: 16px;
     display: flex;
     overflow-x: scroll;
     -ms-overflow-style: none;
@@ -190,6 +189,12 @@ body {
     font-size: 33px;
     font-weight: 900;
     margin: 20px 20px 16px 8px;
+}
+
+#apple-hates-me {
+    display: inline-block;
+    min-width: 16px;
+    height: 80px;
 }
 
 #mc-mods-div {
