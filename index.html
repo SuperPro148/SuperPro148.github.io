@@ -44,9 +44,20 @@
             </div>
             <div id="modrinth-profile" class="page-element">
                 <img id="modrinth-profile-icon" src="img/icon.png" alt="modrinth profile icon" onclick="window.open('https://modrinth.com/user/SuperPro148')">
-                <p id="modrinth-profile-followers">Project followers: 0</p>
-                <p id="modrinth-profile-downloads">Project downloads: 0</p>
-                <p id="modrinth-profile-projects">Projects: 0</p>
+                <table id="modrinth-profile-table">
+                    <tr class="profile-table-row">
+                        <td class="profile-table-name">Project downloads</td>
+                        <td id="modrinth-profile-downloads" class="profile-table-value"></td>
+                    </tr>
+                    <tr class="profile-table-row">
+                        <td class="profile-table-name">Project followers</td>
+                        <td id="modrinth-profile-followers" class="profile-table-value"></td>
+                    </tr>
+                    <tr class="profile-table-row">
+                        <td class="profile-table-name">Projects</td>
+                        <td id="modrinth-profile-projects" class="profile-table-value"></td>
+                    </tr>
+                </table>
             </div>
         </div>
         <div id="mc-mods-div" class="hidden"></div>

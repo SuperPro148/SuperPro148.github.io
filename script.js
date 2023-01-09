@@ -93,9 +93,9 @@ async function setProfileAmounts() {
         projects++;
     });
 
-    document.getElementById("modrinth-profile-downloads").innerText = `Project downloads:\t\t\t\t${downloads}`;
-    document.getElementById("modrinth-profile-followers").innerText = `Project followers:\t\t\t\t${followers}`;
-    document.getElementById("modrinth-profile-projects").innerText = `Projects:\t\t\t\t${projects}`;
+    document.getElementById("modrinth-profile-downloads").innerText = `${downloads}`;
+    document.getElementById("modrinth-profile-followers").innerText = `${followers}`;
+    document.getElementById("modrinth-profile-projects").innerText = `${projects}`;
     document.getElementById("downloads-amount").innerText = `${downloads}`;
 }
 

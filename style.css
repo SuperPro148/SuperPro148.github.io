@@ -117,6 +117,21 @@ body {
     margin: 16px;
 }
 
+.profile-table-row {
+    width: 280px;
+    height: 32px;
+}
+
+.profile-table-name {
+    width: 200px;
+    padding: 0;
+}
+
+.profile-table-value {
+    width: 80px;
+    padding: 0;
+}
+
 .mc-mod {
     width: calc(100% - 16px);
     height: 160px;
@@ -229,6 +244,7 @@ body {
     height: 160px;
     flex: 1 0 auto;
     position: relative;
+    display: flex;
 }
 
 #modrinth-profile-icon {
@@ -237,30 +253,16 @@ body {
     height: 128px;
     border-radius: 12px;
     cursor: pointer;
+    display: inline-block;
 }
 
-#modrinth-profile-followers {
+#modrinth-profile-table {
+    border-collapse: collapse;
     font-weight: 900;
-    font-size: 20px;
-    top: 12px;
-    left: 160px;
-    position: absolute;
-}
-
-#modrinth-profile-downloads {
-    font-weight: 900;
-    font-size: 20px;
-    top: 48px;
-    left: 160px;
-    position: absolute;
-}
-
-#modrinth-profile-projects {
-    font-weight: 900;
-    font-size: 20px;
-    top: 84px;
-    left: 160px;
-    position: absolute;
+    width: 280px;
+    height: 96px;
+    margin: 32px 14px;
+    display: inline-block;
 }
 
 #mc-mods-div {
