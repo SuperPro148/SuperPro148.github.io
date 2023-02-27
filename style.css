@@ -10,7 +10,7 @@
 body {
     margin: 16px 64px;
     background-color: var(--bg-color);
-    font-family: Inter;
+    font-family: "Tilt Neon";
     color: var(--text-color);
 }
 
@@ -31,7 +31,7 @@ body {
 .header-button {
     background-color: var(--button-color);
     color: var(--text-color);
-    font-family: Inter;
+    font-family: "Tilt Neon";
     font-size: 20px;
     font-weight: 900;
     text-align: left;
@@ -216,9 +216,9 @@ body {
     display: inline-block;
     text-align: center;
     width: 216px;
-    font-size: 33px;
+    font-size: 32px;
     font-weight: 900;
-    margin: 20px 20px 16px 8px;
+    margin: 20px 8px 20px 0px;
 }
 
 #apple-hates-me {
