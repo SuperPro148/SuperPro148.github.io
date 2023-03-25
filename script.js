@@ -73,7 +73,7 @@ async function createModElement(slug, order) {
     
     modElements[order] = mainElem;
     modElementsFinished.push(true);
-    if (modElementsFinished.length === 5) {
+    if (modElementsFinished.length === 6) {
         modElements.forEach((elem) => {
             document.getElementById("mc-mods-div").appendChild(elem);
         });
@@ -148,8 +148,9 @@ let modElementsFinished = [];
 
 setProfileAmounts();
 
-createModElement("quickarmorswap", 0);
-createModElement("armorhud-fabric", 1);
-createModElement("platformprecision", 2);
-createModElement("configlib148", 3);
-createModElement("supers-test-mod", 4);
+createModElement("ssfb", 0);
+createModElement("quickarmorswap", 1);
+createModElement("armorhud-fabric", 2);
+createModElement("platformprecision",3);
+createModElement("configlib148", 4);
+createModElement("supers-test-mod", 5);
